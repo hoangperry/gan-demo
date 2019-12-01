@@ -8,13 +8,17 @@
     <title>Demo Generative Adversarial Networks</title>
     <style>
         body{
-            background: #333333;
+            background: #ffffff;
         }
     </style>
 </head>
 <body align="center">
+    <nav class="navbar navbar-dark bg-dark" style="background: #333333; color: #ffffff">
+        <h4>Final project of Machine Learning Course (CS503044) </h4>
+        <h1>Generative Adversarial Network Demo</h1>
+    </nav>
     <div align="center" style="margin-top: 20px;">
-        <img src="{% static 'mnist.gif' %}" style="width: 20%;">
+        <img src="{% static 'mnist.gif' %}" style="width: 14%;">
         <form action="" method="post">
             {% csrf_token %}
             <button type="submit"
@@ -23,7 +27,7 @@
 
         </form>
         <img src="{% static imgdir %}"
-            style="width: 20%; margin: 20px;"
+            style="width: 14%; margin: 20px;"
             onerror="arguments[0].currentTarget.style.display='none'">
     </div>
 </body>
