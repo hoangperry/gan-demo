@@ -1,10 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    {% load staticfiles %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.css' %}">
+    <script src="{% static 'js/bootstrap.js' %}"></script>
     <meta charset="UTF-8">
     <title>Demo Generative Adversarial Networks</title>
+    <style>
+        body{
+            background: #333333;
+        }
+    </style>
 </head>
-<body>
-    <h1>{{ test }}</h1>
+<body align="center">
+    <div align="center" style="margin-top: 20px;">
+        <img src="{% static 'mnist.gif' %}" style="width: 20%;">
+        <form action="" method="post">
+            {% csrf_token %}
+            <button type="submit"
+                    style="display: block; margin-top: 20px; width: 15%; height: 60px; font-size: 30px;"
+                    class="btn btn-success">Generate</button>
+
+        </form>
+        <img src="{% static imgdir %}"
+            style="width: 20%; margin: 20px;"
+            onerror="arguments[0].currentTarget.style.display='none'">
+    </div>
 </body>
 </html>
