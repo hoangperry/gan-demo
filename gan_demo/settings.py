@@ -25,7 +25,7 @@ SECRET_KEY = '((-6q#nq_#o#^nip2n2bix@5iaurozo8&p643#jxtwmx_sjc8)'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['52.139.239.156', '0.0.0.0', 'localhost']
+ALLOWED_HOSTS = ['52.139.239.156', '0.0.0.0', 'localhost', 'truongnhathoang.media']
 
 
 # Application definition
